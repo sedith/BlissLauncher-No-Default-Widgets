@@ -77,9 +77,9 @@
     <string name="weather_46">Nevicate</string>
     <string name="weather_45">Acquazzoni</string>
     <string name="weather_44">Parzialmente Nuvoloso</string>
-    <string name="weather_43">Neve Pesante</string>
+    <string name="weather_43">Nevicate Pesanti</string>
     <string name="weather_42">Sporadiche Nevicate</string>
-    <string name="weather_41">Neve Pesante</string>
+    <string name="weather_41">Nevicate Pesanti</string>
     <string name="weather_40">Piogge Sporadiche</string>
     <string name="weather_39">Sporadici Temporali</string>
     <string name="weather_38">Sporadici Temporali</string>
@@ -121,7 +121,7 @@
     <string name="weather_2">Uragano</string>
     <string name="weather_1">Tempesta Tropicale</string>
     <string name="cancel">Annulla</string>
-    <string name="unknown">Sconosciuto</string>
+    <string name="unknown"></string>
     <string name="explanation_access_to_appusage_is_not_enabled">Consenti l\'accesso ad appusage per mostrare le app preferite.</string>
     <string name="app_suggestion">PREFERITE</string>
     <string name="untitled">Senza titolo</string>
