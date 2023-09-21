@@ -66,7 +66,7 @@
     <string name="weather_refresh_60min">60 mínútur</string>
     <string name="weather_refresh_2hrs">2 klukkustundir</string>
     <string name="weather_refresh_4hrs">4 klukkustundir</string>
-    <string name="weather_refresh_6hrs">klukkustund</string>
+    <string name="weather_refresh_6hrs">6 klukkustundir</string>
     <string name="weather_refresh_8hrs">8 klukkustundir</string>
     <string name="general_category">Almennt</string>
     <string name="display_category">Birting</string>
