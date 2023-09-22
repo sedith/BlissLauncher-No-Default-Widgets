@@ -121,7 +121,6 @@
     <string name="weather_2">Uragano</string>
     <string name="weather_1">Tempesta Tropicale</string>
     <string name="cancel">Annulla</string>
-    <string name="unknown"></string>
     <string name="explanation_access_to_appusage_is_not_enabled">Consenti l\'accesso ad appusage per mostrare le app preferite.</string>
     <string name="app_suggestion">PREFERITE</string>
     <string name="untitled">Senza titolo</string>
