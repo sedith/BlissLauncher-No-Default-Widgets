@@ -107,4 +107,18 @@
     <string name="weather_custom_location_dialog_title">Ange position</string>
     <string name="weather_29">Delvis molnigt</string>
     <string name="weather_icons_monochrome">Monokrom</string>
+    <string name="weather_13">Snöbyar</string>
+    <string name="weather_5">Blandat regn och snö</string>
+    <string name="weather_7">Blandat snö och snöslask</string>
+    <string name="weather_19">Damm</string>
+    <string name="weather_4">Åskväder</string>
+    <string name="weather_18">Snöslask</string>
+    <string name="weather_9">Duggregn</string>
+    <string name="weather_3">Kraftiga åskväder</string>
+    <string name="weather_8">Frysande duggregn</string>
+    <string name="weather_6">Blandat regn och snöslask</string>
+    <string name="weather_10">Frysande regn</string>
+    <string name="weather_15">Snöyra</string>
+    <string name="weather_14">Lätt snöfall</string>
+    <string name="default_key">DEFAULT_OWM_KEY</string>
 </resources>
