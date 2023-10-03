@@ -121,4 +121,5 @@
     <string name="weather_15">Snöyra</string>
     <string name="weather_14">Lätt snöfall</string>
     <string name="default_key">DEFAULT_OWM_KEY</string>
+    <string name="weather_show_when_minimized_title">Visa när minimerad</string>
 </resources>
