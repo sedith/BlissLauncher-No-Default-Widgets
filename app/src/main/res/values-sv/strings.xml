@@ -122,4 +122,17 @@
     <string name="weather_14">Lätt snöfall</string>
     <string name="default_key">DEFAULT_OWM_KEY</string>
     <string name="weather_show_when_minimized_title">Visa när minimerad</string>
+    <string name="weather_22">Rökigt</string>
+    <string name="weather_23">Blåsigt</string>
+    <string name="weather_33">Uppehåll</string>
+    <string name="weather_34">Uppehåll</string>
+    <string name="weather_37">Lokal åska</string>
+    <string name="weather_38">Spridda åskmoln</string>
+    <string name="weather_39">Spridda åskmoln</string>
+    <string name="weather_41">Blötsnö</string>
+    <string name="weather_42">Spridda snöbyar</string>
+    <string name="weather_43">Blötsnö</string>
+    <string name="weather_45">Åskskurar</string>
+    <string name="weather_46">Snöbyar</string>
+    <string name="weather_47">Lokal åska</string>
 </resources>
