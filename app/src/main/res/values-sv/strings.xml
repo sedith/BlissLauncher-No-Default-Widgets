@@ -34,7 +34,7 @@
     <string name="edit">Redigera</string>
     <string name="weather_source_not_selected">Ingen källa för väderdata angiven</string>
     <string name="toast_package_unavailable">Paketet är inte tillgängligt eller så är det inaktiverad</string>
-    <string name="weather_NE">NÖ</string>
+    <string name="weather_NE">NO</string>
     <string name="weather_show_when_minimized_summary">Visa summerad väderinformation när gränssnittskomponenten är minimerad</string>
     <string name="weather_enabled">Aktiverad</string>
     <string name="weather_24">Blåsigt</string>
@@ -56,7 +56,7 @@
     <string name="toast_permission_denied">Åtkomst nekad</string>
     <string name="ignore">Ignorera</string>
     <string name="default_scroll_format">Sida %1$d av %2$d</string>
-    <string name="weather_E">Ö</string>
+    <string name="weather_E">O</string>
     <string name="ok">ok</string>
     <string name="weather_show_timestamp_title">Visa tidsstämpel</string>
     <string name="toast_cannot_uninstall">Kan inte avinstallera denna app</string>
@@ -69,7 +69,7 @@
     <string name="weather_11">Skurar</string>
     <string name="weather_27">Mestadels molnigt</string>
     <string name="weather_28">Mestadels molnigt</string>
-    <string name="weather_SE">SÖ</string>
+    <string name="weather_SE">SO</string>
     <string name="weather_SW">SV</string>
     <string name="weather_refresh_4hrs">4 timmar</string>
     <string name="weather_no_data">Ingen data</string>
@@ -103,7 +103,7 @@
     <string name="weather_use_custom_location">Använd anpassad plats</string>
     <string name="weather_44">Delvis molnigt</string>
     <string name="weather_setting">Väders inställningsikon</string>
-    <string name="weather_W">W</string>
+    <string name="weather_W">V</string>
     <string name="weather_custom_location_dialog_title">Ange position</string>
     <string name="weather_29">Delvis molnigt</string>
     <string name="weather_icons_monochrome">Monokrom</string>
@@ -135,4 +135,5 @@
     <string name="weather_45">Åskskurar</string>
     <string name="weather_46">Snöbyar</string>
     <string name="weather_47">Lokal åska</string>
+    <string name="weather_condition_image">Bild av Väderförhållande</string>
 </resources>
