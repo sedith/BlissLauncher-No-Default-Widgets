@@ -55,7 +55,7 @@
     <string name="weather_46">Sneeuwbuien</string>
     <string name="weather_45">Onweersbuien</string>
     <string name="weather_44">Licht Bewolkt</string>
-    <string name="weather_43">Hevige Sneeuw</string>
+    <string name="weather_43">Veel Sneeuw</string>
     <string name="weather_42">Verspreide Sneeuwbuien</string>
     <string name="weather_41">Hevige Sneeuw</string>
     <string name="weather_40">Verspreide Regenbuien</string>
@@ -87,7 +87,7 @@
     <string name="weather_9">Motregen</string>
     <string name="weather_8">Motregen met ijzel</string>
     <string name="weather_4">Onweer</string>
-    <string name="weather_3">Hevig Onweer</string>
+    <string name="weather_3">Hevig onweer</string>
     <string name="weather_2">Orkaan</string>
     <string name="weather_1">Tropische storm</string>
     <string name="weather_0">Tornado</string>
@@ -102,10 +102,10 @@
     <string name="weather_use_custom_location">Gebruik aangepaste locatie</string>
     <string name="weather_enable">Toon weer</string>
     <string name="weather_refresh_manual">Handmatig</string>
-    <string name="weather_30">Gedeeltelijk bewolkt</string>
-    <string name="weather_29">Gedeeltelijk bewolkt</string>
+    <string name="weather_30">Licht Bewolkt</string>
+    <string name="weather_29">Licht Bewolkt</string>
     <string name="weather_22">Rokerig</string>
-    <string name="weather_10">Hagel</string>
+    <string name="weather_10">Aanvriezende regen</string>
     <string name="weather_7">Sneeuw en ijzel</string>
     <string name="weather_6">Regen en ijzel</string>
     <string name="weather_5">Natte sneeuw</string>
