@@ -357,7 +357,8 @@ public class AdaptiveIconDrawableCompat extends Drawable implements Drawable.Cal
         mMaskMatrix.setScale(b.width() / MASK_SIZE, b.height() / MASK_SIZE);
         sMask.transform(mMaskMatrix, mMask);
 
-        if (mMaskBitmap == null || mMaskBitmap.getWidth() != b.width() || mMaskBitmap.getHeight() != b.height()) {
+        if ((mMaskBitmap == null || mMaskBitmap.getWidth() != b.width() || mMaskBitmap.getHeight() != b.height())
+                && (b.height() > 0 && b.width() > 0)) {
             mMaskBitmap = Bitmap.createBitmap(b.width(), b.height(), Bitmap.Config.ALPHA_8);
             mLayersBitmap = Bitmap.createBitmap(b.width(), b.height(), Bitmap.Config.ARGB_8888);
         }
