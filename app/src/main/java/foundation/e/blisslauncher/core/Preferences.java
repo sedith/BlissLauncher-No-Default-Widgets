@@ -86,7 +86,7 @@ public class Preferences {
     }
 
     public static long weatherRefreshIntervalInMs(Context context) {
-        String value = getPrefs(context).getString(Constants.WEATHER_REFRESH_INTERVAL, "60");
+        String value = getPrefs(context).getString(Constants.WEATHER_REFRESH_INTERVAL, "15");
         return Long.parseLong(value) * 60L * 1000L;
     }
 

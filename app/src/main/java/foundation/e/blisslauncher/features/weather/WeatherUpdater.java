@@ -49,6 +49,8 @@ public class WeatherUpdater {
 
     private long mLastWeatherUpdateInMs = 0;
 
+    private Location mLastLocation;
+
     private static WeatherUpdater mInstance = null;
 
     public static WeatherUpdater getInstance(@NonNull Context context) {
@@ -134,11 +136,16 @@ public class WeatherUpdater {
     }
 
     private synchronized void onNewLocationFetched(@Nullable Location location) {
-        if (location == null) {
+        if (location == null && mLastLocation == null) {
             Timber.tag(TAG).i("Could not fetch any location");
             return;
         }
 
+        if (location != null) {
+            mLastLocation = location;
+        }
+
+        location = mLastLocation;
         Timber.tag(TAG).i("New location fetched:%s", location);
 
         requestWeatherUpdate(location);

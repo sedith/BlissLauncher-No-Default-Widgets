@@ -75,7 +75,6 @@ import androidx.core.graphics.ColorUtils;
 import androidx.core.view.GestureDetectorCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsControllerCompat;
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
@@ -146,7 +145,6 @@ import foundation.e.blisslauncher.features.suggestions.SearchSuggestionUtil;
 import foundation.e.blisslauncher.features.suggestions.SuggestionProvider;
 import foundation.e.blisslauncher.features.suggestions.SuggestionsResult;
 import foundation.e.blisslauncher.features.usagestats.AppUsageStats;
-import foundation.e.blisslauncher.features.weather.DeviceStatusService;
 import foundation.e.blisslauncher.features.weather.WeatherPreferences;
 import foundation.e.blisslauncher.features.weather.WeatherSourceListenerService;
 import foundation.e.blisslauncher.features.weather.WeatherUpdateService;
@@ -176,7 +174,6 @@ public class LauncherActivity extends AppCompatActivity
     private static final int REQUEST_PERMISSION_CALL_PHONE = 14;
     private static final int REQUEST_LOCATION_SOURCE_SETTING = 267;
     private static final int STORAGE_PERMISSION_REQUEST_CODE = 586;
-    public static final String ACTION_LAUNCHER_RESUME = "foundation.e.blisslauncher.LauncherActivity.LAUNCHER_RESUME";
     public static final String EXTRA_FRAGMENT_ARG_KEY = ":settings:fragment_args_key";
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     public static final String NOTIFICATION_SETTING = "enabled_notification_listeners";
@@ -531,9 +528,6 @@ public class LauncherActivity extends AppCompatActivity
         if (widgetsPage != null) {
             refreshSuggestedApps(widgetsPage, forceRefreshSuggestedApps);
         }
-
-        final Intent resumeIntent = new Intent(ACTION_LAUNCHER_RESUME);
-        LocalBroadcastManager.getInstance(this).sendBroadcast(resumeIntent);
 
         if (widgetContainer != null) {
             WidgetManager widgetManager = WidgetManager.getInstance();
@@ -1474,7 +1468,6 @@ public class LauncherActivity extends AppCompatActivity
 
         if (WeatherUtils.isWeatherServiceAvailable(this)) {
             startService(new Intent(this, WeatherSourceListenerService.class));
-            startService(new Intent(this, DeviceStatusService.class));
         }
 
         if (!Preferences.useCustomWeatherLocation(this)) {

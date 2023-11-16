@@ -12,7 +12,6 @@ import android.widget.TextView;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import foundation.e.blisslauncher.R;
 import foundation.e.blisslauncher.core.Preferences;
-import foundation.e.blisslauncher.features.launcher.LauncherActivity;
 import timber.log.Timber;
 
 public class WeatherInfoView extends LinearLayout {
@@ -34,13 +33,6 @@ public class WeatherInfoView extends LinearLayout {
                     textCity.setText(city);
                 }
             }
-        }
-    };
-
-    private final BroadcastReceiver mResumeReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            updateWeatherPanel();
         }
     };
 
@@ -76,7 +68,6 @@ public class WeatherInfoView extends LinearLayout {
         intentFilter.addAction(WeatherUpdateService.ACTION_UPDATE_CITY_FINISHED);
 
         broadcastManager.registerReceiver(mWeatherReceiver, intentFilter);
-        broadcastManager.registerReceiver(mResumeReceiver, new IntentFilter(LauncherActivity.ACTION_LAUNCHER_RESUME));
         updateWeatherPanel();
     }
 
@@ -85,7 +76,6 @@ public class WeatherInfoView extends LinearLayout {
         super.onDetachedFromWindow();
         final LocalBroadcastManager broadcastManager = LocalBroadcastManager.getInstance(getContext());
         broadcastManager.unregisterReceiver(mWeatherReceiver);
-        broadcastManager.unregisterReceiver(mResumeReceiver);
     }
 
     private void updateWeatherPanel() {

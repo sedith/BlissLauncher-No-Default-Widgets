@@ -19,7 +19,7 @@ public class WeatherUpdateService extends Service {
     public static final String ACTION_UPDATE_CITY_FINISHED = "org.indin.blisslauncher.action.WEATHER_UPDATE_CITY_FINISHED";
     public static final String EXTRA_UPDATE_CITY_KEY = "city";
 
-    private static final long UPDATE_PERIOD_IN_MS = 5L * 1000L;
+    private static final long UPDATE_PERIOD_IN_MS = 60L * 1000L;
 
     private HandlerThread mHandlerThread;
     private Handler mHandler;
