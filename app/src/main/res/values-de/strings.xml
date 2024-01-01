@@ -126,7 +126,7 @@
     <string name="explanation_access_to_appusage_is_not_enabled">Aktiviere den Zugriff auf Apps, um App-Vorschläge anzuzeigen.</string>
     <string name="app_suggestion">Vorschläge</string>
     <string name="untitled">Kein Titel</string>
-    <string name="search">Suche</string>
+    <string name="search">Suchen</string>
     <string name="edit">Bearbeiten</string>
     <string name="choose_widget">Widget auswählen</string>
     <string name="add_widget">Widget hinzufügen</string>
