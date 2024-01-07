@@ -38,7 +38,7 @@
     <string name="weather_show_when_minimized_summary">Visa summerad väderinformation när gränssnittskomponenten är minimerad</string>
     <string name="weather_enabled">Aktiverad</string>
     <string name="weather_24">Blåsigt</string>
-    <string name="weather_40">Spridda skurar</string>
+    <string name="weather_40">Spridda Skurar</string>
     <string name="permlab_install_shortcut">installera genvägar</string>
     <string name="weather_refresh_manual">Manuell</string>
     <string name="weather_custom_location_hint">Stad, Stat/Land</string>
@@ -79,7 +79,7 @@
     <string name="weather_enable">Visa väder</string>
     <string name="weather_refresh_60min">60 minuter</string>
     <string name="weather_refresh_interval">Uppdateringsintervall</string>
-    <string name="weather_35">Blandat regn och hagel</string>
+    <string name="weather_35">Regn och Hagel</string>
     <string name="app_suggestion">Förslag</string>
     <string name="app_name_maps">Kartor</string>
     <string name="search">Sök</string>
@@ -108,7 +108,7 @@
     <string name="weather_29">Delvis molnigt</string>
     <string name="weather_icons_monochrome">Monokrom</string>
     <string name="weather_13">Snöbyar</string>
-    <string name="weather_5">Blandat regn och snö</string>
+    <string name="weather_5">Snöblandat regn</string>
     <string name="weather_7">Blandat snö och snöslask</string>
     <string name="weather_19">Damm</string>
     <string name="weather_4">Åskväder</string>
