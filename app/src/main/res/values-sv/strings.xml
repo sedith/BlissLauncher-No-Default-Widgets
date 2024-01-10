@@ -136,4 +136,17 @@
     <string name="weather_46">Snöbyar</string>
     <string name="weather_47">Lokal åska</string>
     <string name="weather_condition_image">Bild av Väderförhållande</string>
+    <string name="notification_badge_warning">För att se aviseringsprickar på appikoner måste du ge startaren åtkomst till aviseringar.</string>
+    <string name="toast_dock_full">Docken är redan full</string>
+    <string name="toast_custom_location">Ställ in anpassad plats i inställningarna för väder.</string>
+    <string name="permdesc_uninstall_shortcut">Tillåter en app att ta bort genvägar utan användarens inblandning.</string>
+    <string name="toast_recreating_launcher">Skapar Launcher igen</string>
+    <string name="toast_failed">Misslyckades att ställa in oskarp bakgrundsbild</string>
+    <string name="icon_set">Ställ in ikoner</string>
+    <string name="weather_retrieve_location_dialog_message">Nätverksgeolokalisering är inaktiverat.
+\n
+\nAktivera plats för gränssnittskomponenten Väder.</string>
+    <string name="weather_alternate_icons_summary">Välj för att växla mellan standard (färg) och alternativa (vit) ikoner</string>
+    <string name="permdesc_install_shortcut">Tillåter en app att lägga till genvägar utan användarens inblandning.</string>
+    <string name="icon_badging_service_title">Visa aviseringsprickar</string>
 </resources>
