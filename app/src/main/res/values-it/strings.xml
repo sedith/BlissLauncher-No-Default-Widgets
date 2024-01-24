@@ -148,4 +148,5 @@
     <string name="perm_required">Permesso richiesto</string>
     <string name="weather_refresh_15min">15 minuti</string>
     <string name="default_key">CHIAVE_OWM_DI_DEFAULT</string>
+    <string name="unknown">Sconosciuto</string>
 </resources>
