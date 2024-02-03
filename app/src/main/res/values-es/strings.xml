@@ -15,7 +15,7 @@
     <string name="weather_refresh_manual">Manual</string>
     <string name="weather_tap_to_select_source">Pulsa para seleccionar uno</string>
     <string name="weather_source_not_selected">No haz seleccionado fuente meteorológica</string>
-    <string name="weather_cannot_reach_provider">No se puede alcanzar %s por el momento</string>
+    <string name="weather_cannot_reach_provider">No se puede contactar %s de momento</string>
     <string name="weather_last_sync_just_now">Hace un momento</string>
     <string name="weather_refreshing">Actualizando</string>
     <string name="weather_tap_to_refresh">Pulsa para actualizar</string>
