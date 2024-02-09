@@ -11,4 +11,14 @@
     <string name="search">Søk</string>
     <string name="explanation_access_to_appusage_is_not_enabled">Aktiver tilgang til applikasjonsbruk for å vise forslag til applikasjoner.</string>
     <string name="default_key">DEFAULT_OWM_KEY</string>
+    <string name="weather_13">Snøbyger</string>
+    <string name="weather_5">Sludd</string>
+    <string name="weather_7">Blandet snø og sludd</string>
+    <string name="weather_4">Tordenvær</string>
+    <string name="weather_9">Duskregn</string>
+    <string name="weather_8">Underkjølt duskregn</string>
+    <string name="weather_6">Blandet regn og sludd</string>
+    <string name="weather_11">Byger</string>
+    <string name="weather_10">Underkjølt regn</string>
+    <string name="weather_12">Byger</string>
 </resources>
