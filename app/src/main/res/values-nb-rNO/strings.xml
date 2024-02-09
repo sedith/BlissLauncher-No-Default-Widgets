@@ -27,8 +27,19 @@
     <string name="weather_15">Snøfokk</string>
     <string name="weather_14">Lette snøbyger</string>
     <string name="weather_16">Snø</string>
-    <string name="weather_23">Vindfull</string>
+    <string name="weather_23">Vindkast</string>
     <string name="weather_21">Tørrdis</string>
     <string name="weather_20">Tåkete</string>
     <string name="weather_22">Røykfylt</string>
+    <string name="weather_25">Kaldt</string>
+    <string name="weather_34">Oppholdsvær</string>
+    <string name="weather_31">Klart</string>
+    <string name="weather_24">Vindfullt</string>
+    <string name="weather_32">Solfylt</string>
+    <string name="weather_26">Overskyet</string>
+    <string name="weather_27">For det meste overskyet</string>
+    <string name="weather_28">For det meste overskyet</string>
+    <string name="weather_33">Oppholdsvær</string>
+    <string name="weather_30">Delvis overskyet</string>
+    <string name="weather_29">Delvis overskyet</string>
 </resources>
