@@ -21,4 +21,10 @@
     <string name="weather_11">Byger</string>
     <string name="weather_10">Underkjølt regn</string>
     <string name="weather_12">Byger</string>
+    <string name="weather_17">Hagl</string>
+    <string name="weather_19">Støv</string>
+    <string name="weather_18">Sludd</string>
+    <string name="weather_15">Snøfokk</string>
+    <string name="weather_14">Lette snøbyger</string>
+    <string name="weather_16">Snø</string>
 </resources>
