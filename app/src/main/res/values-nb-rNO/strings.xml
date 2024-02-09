@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="weather_1">Tropisk storm</string>
+    <string name="weather_2">Orkan</string>
+    <string name="untitled">Navnløs</string>
+    <string name="unknown">Ukjent</string>
+    <string name="weather_3">Kraftig tordenvær</string>
+    <string name="weather_0">Tornado</string>
+    <string name="cancel">Avbryt</string>
+    <string name="app_suggestion">Forslag</string>
+    <string name="search">Søk</string>
+    <string name="explanation_access_to_appusage_is_not_enabled">Aktiver tilgang til applikasjonsbruk for å vise forslag til applikasjoner.</string>
+    <string name="default_key">DEFAULT_OWM_KEY</string>
+</resources>
