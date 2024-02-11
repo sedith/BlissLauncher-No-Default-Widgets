@@ -20,7 +20,7 @@
     <string name="weather_6">Blandet regn og sludd</string>
     <string name="weather_11">Byger</string>
     <string name="weather_10">Underkjølt regn</string>
-    <string name="weather_12">Byger</string>
+    <string name="weather_12">Regnbyger</string>
     <string name="weather_17">Hagl</string>
     <string name="weather_19">Støv</string>
     <string name="weather_18">Sludd</string>
@@ -33,7 +33,7 @@
     <string name="weather_22">Røykfylt</string>
     <string name="weather_25">Kaldt</string>
     <string name="weather_34">Oppholdsvær</string>
-    <string name="weather_31">Klart</string>
+    <string name="weather_31">Klarvær</string>
     <string name="weather_24">Vindfullt</string>
     <string name="weather_32">Solfylt</string>
     <string name="weather_26">Overskyet</string>
@@ -42,4 +42,10 @@
     <string name="weather_33">Oppholdsvær</string>
     <string name="weather_30">Delvis overskyet</string>
     <string name="weather_29">Delvis overskyet</string>
+    <string name="weather_38">Spredt tordenvær</string>
+    <string name="weather_36">Varmt</string>
+    <string name="weather_40">Spredte regnbyger</string>
+    <string name="weather_37">Lokalt tordenvær</string>
+    <string name="weather_35">Regn og hagl</string>
+    <string name="weather_39">Spredt tordenvær</string>
 </resources>
