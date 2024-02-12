@@ -101,4 +101,25 @@
     <string name="weather_retrieve_location_dialog_enable_button">Aktiver</string>
     <string name="weather_use_custom_location">Bruk egendefinert lokasjon</string>
     <string name="weather_custom_location_dialog_title">Skriv inn lokasjon</string>
+    <string name="weather_alternate_icons_title">Bruk fargeikoner</string>
+    <string name="weather_icons_standard">I farger</string>
+    <string name="weather_select_location">Velg lokasjon</string>
+    <string name="weather_tap_to_setup">Trykk for å konfigurere Vær-modulen</string>
+    <string name="icon_set_selection_get_more">Finn flere…</string>
+    <string name="weather_show_when_minimized_summary">Vis oppsummert værinformasjon når modulen er minimert</string>
+    <string name="permlab_install_shortcut">installer snarveier</string>
+    <string name="permdesc_uninstall_shortcut">Tillater at en applikasjon fjerner snarveier uten at brukeren må godkjenne det.</string>
+    <string name="weather_icon_set_title">Ikonsett</string>
+    <string name="weather_condition_image">Bilde for værforhold</string>
+    <string name="weather">Vær</string>
+    <string name="weather_progress_title">Sjekker lokasjonen</string>
+    <string name="weather_show_when_minimized_title">Vis når minimert</string>
+    <string name="icon_set">Bilde av ikonsett</string>
+    <string name="dummy_weather_temp_min_max">42° / 28°</string>
+    <string name="permlab_uninstall_shortcut">avinstaller snarveier</string>
+    <string name="dummy_weather_temp">36°</string>
+    <string name="weather_alternate_icons_summary">Velg for å veksle mellom standardikoner (farge) eller alternative (hvite) ikoner</string>
+    <string name="permdesc_install_shortcut">Tillater at en applikasjon legger til snarveier uten at brukeren må godkjenne det.</string>
+    <string name="weather_setting">Innstillingsikon for Vær</string>
+    <string name="weather_icons_monochrome">Ensfarget</string>
 </resources>
