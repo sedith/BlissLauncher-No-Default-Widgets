@@ -60,7 +60,7 @@
     <string name="weather_refresh_manual">Manuelt</string>
     <string name="weather_S">S</string>
     <string name="weather_last_sync_just_now">Akkurat nå</string>
-    <string name="weather_kph">km/h</string>
+    <string name="weather_kph">&amp;nbsp;km/h</string>
     <string name="weather_E">Ø</string>
     <string name="weather_SE">SØ</string>
     <string name="weather_SW">SV</string>
@@ -81,4 +81,24 @@
     <string name="weather_41">Kraftig snøvær</string>
     <string name="weather_44">Delvis overskyet</string>
     <string name="weather_W">V</string>
+    <string name="weather_source_title">Kilde for værvarsling</string>
+    <string name="display_category">Visning</string>
+    <string name="weather_invert_lowhigh">Bytt om på lav/høy temperatur</string>
+    <string name="weather_custom_location_title">Lokasjon</string>
+    <string name="weather_enabled">Aktivert</string>
+    <string name="weather_custom_location_hint">Sted, delstat/land</string>
+    <string name="weather_use_metric">Bruk metrisk system (°C)</string>
+    <string name="weather_retrieve_location_dialog_title">Kan ikke finne lokasjonen!</string>
+    <string name="weather_show_timestamp_title">Vis tidsstempel</string>
+    <string name="weather_category">Innstillinger for værvarsel</string>
+    <string name="weather_show_location_title">Vis lokasjon</string>
+    <string name="weather_enable">Vis været</string>
+    <string name="weather_refresh_interval">Oppdateringsfrekvens</string>
+    <string name="weather_geolocated">Geolokalisert ved hjelp av nettverk</string>
+    <string name="weather_retrieve_location_dialog_message">Nettverksgeolokalisering er deaktivert.
+\n
+\nAktiver lokasjon for å fungere med Vær-modulen.</string>
+    <string name="weather_retrieve_location_dialog_enable_button">Aktiver</string>
+    <string name="weather_use_custom_location">Bruk egendefinert lokasjon</string>
+    <string name="weather_custom_location_dialog_title">Skriv inn lokasjon</string>
 </resources>
