@@ -33,7 +33,7 @@ android {
     compileSdk = Versions.COMPILE_SDK
 
     defaultConfig {
-        applicationId = "foundation.e.blisslauncher"
+        applicationId = "foundation.e.blisslauncher.no_default_widgets"
         minSdk = Versions.MIN_SDK
         targetSdk = Versions.TARGET_SDK
 

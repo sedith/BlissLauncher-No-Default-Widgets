@@ -168,6 +168,9 @@ public class LauncherActivity extends AppCompatActivity
             OnSwipeDownListener,
             WallpaperManagerCompat.OnColorsChangedListener {
 
+    /** True to disable the search and app suggestion widgets. */
+    private static final boolean DISABLE_SEARCH_AND_APP_SUGGESTIONS = true;
+
     private static final int WIDGET_PAGE = 0;
     public static final int REORDER_TIMEOUT = 350;
     private final static int EMPTY_LOCATION_DRAG = -999;
@@ -1269,6 +1272,10 @@ public class LauncherActivity extends AppCompatActivity
     }
 
     public void refreshSuggestedApps(ViewGroup viewGroup, boolean forceRefresh) {
+        if (DISABLE_SEARCH_AND_APP_SUGGESTIONS) {
+            return;
+        }
+
         TextView openUsageAccessSettingsTv = viewGroup.findViewById(R.id.openUsageAccessSettings);
         GridLayout suggestedAppsGridLayout = viewGroup.findViewById(R.id.suggestedAppGrid);
         AppUsageStats appUsageStats = new AppUsageStats(this);
@@ -1388,79 +1395,85 @@ public class LauncherActivity extends AppCompatActivity
         currentPageNumber = 1;
         mHorizontalPager.setCurrentPage(currentPageNumber);
 
-        widgetsPage.findViewById(R.id.used_apps_layout).setClipToOutline(true);
+        if (DISABLE_SEARCH_AND_APP_SUGGESTIONS) {
+            widgetsPage.findViewById(R.id.search_and_app_suggestions_layout).setVisibility(GONE);
+        } else {
+            // Prepare app suggestions view
+            // [[BEGIN]]
+            widgetsPage.findViewById(R.id.used_apps_layout).setClipToOutline(true);
 
-        // Prepare app suggestions view
-        // [[BEGIN]]
-        widgetsPage.findViewById(R.id.openUsageAccessSettings)
-                .setOnClickListener(view -> startActivity(new Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS)));
+            widgetsPage.findViewById(R.id.openUsageAccessSettings).setOnClickListener(
+                    view -> startActivity(new Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS)));
 
-        // divided by 2 because of left and right padding.
-        int padding = (int) (mDeviceProfile.availableWidthPx / 2 - Utilities.pxFromDp(8, this)
-                - 2 * mDeviceProfile.cellWidthPx);
-        widgetsPage.findViewById(R.id.suggestedAppGrid).setPadding(padding, 0, padding, 0);
-        // [[END]]
+            // divided by 2 because of left and right padding.
+            int padding =
+                    (int) (mDeviceProfile.availableWidthPx / 2 - Utilities.pxFromDp(8, this)
+                            - 2
+                            * mDeviceProfile.cellWidthPx);
+            widgetsPage.findViewById(R.id.suggestedAppGrid).setPadding(padding, 0, padding, 0);
+            // [[END]]
 
-        // Prepare search suggestion view
-        // [[BEGIN]]
-        ImageView clearSuggestions = widgetsPage.findViewById(R.id.clearSuggestionImageView);
-        clearSuggestions.setOnClickListener(v -> {
-            mSearchInput.setText("");
-            mSearchInput.clearFocus();
-        });
-
-        mSearchInput = widgetsPage.findViewById(R.id.search_input);
-        mSearchInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().length() == 0) {
-                    clearSuggestions.setVisibility(GONE);
-                } else {
-                    clearSuggestions.setVisibility(VISIBLE);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        RecyclerView suggestionRecyclerView = widgetsPage.findViewById(R.id.suggestionRecyclerView);
-        AutoCompleteAdapter suggestionAdapter = new AutoCompleteAdapter(this);
-        suggestionRecyclerView.setHasFixedSize(true);
-        suggestionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        suggestionRecyclerView.setAdapter(suggestionAdapter);
-        getCompositeDisposable().add(RxTextView.textChanges(mSearchInput).debounce(300, TimeUnit.MILLISECONDS)
-                .map(CharSequence::toString).distinctUntilChanged().switchMap(charSequence -> {
-                    if (charSequence != null && charSequence.length() > 0) {
-                        return searchForQuery(charSequence);
-                    } else {
-                        return Observable.just(new SuggestionsResult(charSequence));
-                    }
-                }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(new SearchInputDisposableObserver(this, suggestionAdapter, widgetsPage)));
-
-        mSearchInput.setOnFocusChangeListener((v, hasFocus) -> {
-            if (!hasFocus) {
-                hideKeyboard(v);
-            }
-        });
-
-        mSearchInput.setOnEditorActionListener((textView, action, keyEvent) -> {
-            if (action == EditorInfo.IME_ACTION_SEARCH) {
-                hideKeyboard(mSearchInput);
-                runSearch(mSearchInput.getText().toString());
+            // Prepare search suggestion view
+            // [[BEGIN]]
+            ImageView clearSuggestions = widgetsPage.findViewById(R.id.clearSuggestionImageView);
+            clearSuggestions.setOnClickListener(v -> {
                 mSearchInput.setText("");
                 mSearchInput.clearFocus();
-                return true;
-            }
-            return false;
-        });
-        // [[END]]
+            });
+
+            mSearchInput = widgetsPage.findViewById(R.id.search_input);
+            mSearchInput.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                }
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+                    if (s.toString().trim().length() == 0) {
+                        clearSuggestions.setVisibility(GONE);
+                    } else {
+                        clearSuggestions.setVisibility(VISIBLE);
+                    }
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+
+                }
+            });
+            RecyclerView suggestionRecyclerView = widgetsPage.findViewById(R.id.suggestionRecyclerView);
+            AutoCompleteAdapter suggestionAdapter = new AutoCompleteAdapter(this);
+            suggestionRecyclerView.setHasFixedSize(true);
+            suggestionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+            suggestionRecyclerView.setAdapter(suggestionAdapter);
+            getCompositeDisposable().add(RxTextView.textChanges(mSearchInput).debounce(300, TimeUnit.MILLISECONDS)
+                    .map(CharSequence::toString).distinctUntilChanged().switchMap(charSequence -> {
+                        if (charSequence != null && charSequence.length() > 0) {
+                            return searchForQuery(charSequence);
+                        } else {
+                            return Observable.just(new SuggestionsResult(charSequence));
+                        }
+                    }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+                    .subscribeWith(new SearchInputDisposableObserver(this, suggestionAdapter, widgetsPage)));
+
+            mSearchInput.setOnFocusChangeListener((v, hasFocus) -> {
+                if (!hasFocus) {
+                    hideKeyboard(v);
+                }
+            });
+
+            mSearchInput.setOnEditorActionListener((textView, action, keyEvent) -> {
+                if (action == EditorInfo.IME_ACTION_SEARCH) {
+                    hideKeyboard(mSearchInput);
+                    runSearch(mSearchInput.getText().toString());
+                    mSearchInput.setText("");
+                    mSearchInput.clearFocus();
+                    return true;
+                }
+                return false;
+            });
+            // [[END]]
+        }
 
         // Prepare edit widgets button
         findViewById(R.id.edit_widgets_button)
@@ -1677,6 +1690,10 @@ public class LauncherActivity extends AppCompatActivity
 
     @Override
     public void onClick(String suggestion) {
+        if (DISABLE_SEARCH_AND_APP_SUGGESTIONS) {
+            return;
+        }
+
         mSearchInput.setText(suggestion);
         runSearch(suggestion);
         mSearchInput.clearFocus();
