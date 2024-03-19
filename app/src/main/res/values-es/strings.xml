@@ -2,7 +2,7 @@
 <resources>
     <string name="weather_source_title">Fuente meteorológica</string>
     <string name="weather_enable">Mostrar el clima</string>
-    <string name="weather_enabled">Activo</string>
+    <string name="weather_enabled">Activado</string>
     <string name="display_category">Mostrar</string>
     <string name="weather_category">Panel meteorológico</string>
     <string name="weather_refresh_8hrs">8 horas</string>
@@ -13,12 +13,12 @@
     <string name="weather_refresh_30min">30 minutos</string>
     <string name="weather_refresh_15min">15 minutos</string>
     <string name="weather_refresh_manual">Manual</string>
-    <string name="weather_tap_to_select_source">Pulsa para seleccionar uno</string>
-    <string name="weather_source_not_selected">No haz seleccionado fuente meteorológica</string>
+    <string name="weather_tap_to_select_source">Pulsa para seleccionar una</string>
+    <string name="weather_source_not_selected">No se ha seleccionado fuente meteorológica</string>
     <string name="weather_cannot_reach_provider">No se puede contactar %s de momento</string>
-    <string name="weather_last_sync_just_now">Hace un momento</string>
+    <string name="weather_last_sync_just_now">Ahora mismo</string>
     <string name="weather_refreshing">Actualizando</string>
-    <string name="weather_tap_to_refresh">Pulsa para actualizar</string>
+    <string name="weather_tap_to_refresh">Pulsar para actualizar</string>
     <string name="weather_no_data">No hay datos</string>
     <string name="weather_NW">NO</string>
     <string name="weather_W">O</string>
@@ -31,11 +31,11 @@
     <string name="weather_42">Chubascos de nieve dispersos</string>
     <string name="weather_41">Nevada intensa</string>
     <string name="weather_40">Chubascos dispersos</string>
-    <string name="weather_39">Tormentas dispersas</string>
-    <string name="weather_38">Tormentas dispersas</string>
-    <string name="weather_37">Tormentas aisladas</string>
+    <string name="weather_39">Tormentas eléctricas dispersas</string>
+    <string name="weather_38">Tormentas eléctricas dispersas</string>
+    <string name="weather_37">Tormentas eléctricas aisladas</string>
     <string name="weather_36">Caliente</string>
-    <string name="weather_35">Lluvia mixta y granizo</string>
+    <string name="weather_35">Mezcla de lluvia y granizo</string>
     <string name="weather_34">Claro</string>
     <string name="weather_33">Claro</string>
     <string name="weather_30">Parcialmente nublado</string>
@@ -45,7 +45,7 @@
     <string name="weather_26">Nublado</string>
     <string name="weather_25">Frio</string>
     <string name="weather_24">Ventoso</string>
-    <string name="weather_23">Tempestuoso</string>
+    <string name="weather_23">Borrasca</string>
     <string name="weather_22">Ahumado</string>
     <string name="weather_21">Neblina</string>
     <string name="weather_20">Neblinoso</string>
@@ -67,7 +67,7 @@
     <string name="weather_2">Huracán</string>
     <string name="weather_1">Tormenta tropical</string>
     <string name="weather_0">Tornado</string>
-    <string name="cancel">Cancelado</string>
+    <string name="cancel">Cancelar</string>
     <string name="search">Búsqueda</string>
     <string name="general_category">General</string>
     <string name="weather_S">S</string>
@@ -92,16 +92,16 @@
     <string name="weather_show_location_title">Mostrar ubicación</string>
     <string name="weather_custom_location_title">Ubicación</string>
     <string name="weather_custom_location_dialog_title">Introducir ubicación</string>
-    <string name="weather_geolocated">Geolocalización mediante red</string>
+    <string name="weather_geolocated">Geolocalización por red</string>
     <string name="weather_use_custom_location">Utilizar ubicación específica</string>
     <string name="weather_7">Mezcla de nieve y aguanieve</string>
     <string name="weather_alternate_icons_title">Utilizar iconos de colores</string>
-    <string name="weather_progress_title">Verificando la ubicación</string>
+    <string name="weather_progress_title">Verificando ubicación</string>
     <string name="weather_invert_lowhigh">Invertir temperaturas bajas/altas</string>
     <string name="weather_retrieve_location_dialog_enable_button">Activar</string>
-    <string name="weather_retrieve_location_dialog_message">La geolocalización de red está desactivada.
+    <string name="weather_retrieve_location_dialog_message">Geolocalización de red desactivada.
 \n
-\nActiva la localización para que funcione con el widget del tiempo.</string>
+\nActívala para que funcione con el widget del tiempo.</string>
     <string name="ok">Ok</string>
     <string name="uninstall_shortcut_dialog">¿Quieres desinstalar este acceso directo\?</string>
     <string name="widgets">Widgets</string>
@@ -118,21 +118,21 @@
     <string name="permdesc_install_shortcut">Permite que una aplicación agregue accesos directos sin intervención del usuario.</string>
     <string name="permlab_uninstall_shortcut">desinstalar accesos directos</string>
     <string name="permlab_install_shortcut">instalar accesos directos</string>
-    <string name="icon_set">Imagen del conjunto de iconos</string>
+    <string name="icon_set">Imagen del conjunto de íconos</string>
     <string name="weather_condition_image">Imagen de las condiciones meteorológicas</string>
-    <string name="weather_setting">Icono del tiempo</string>
+    <string name="weather_setting">Icono de ajustes meteorológicos</string>
     <string name="dummy_weather_temp_min_max">42° / 28°</string>
     <string name="dummy_weather_temp">36°</string>
     <string name="weather_tap_to_setup">Pulsa para configurar el tiempo</string>
     <string name="weather">Clima</string>
     <string name="icon_set_selection_get_more">Más información…</string>
     <string name="weather_icons_monochrome">Monocromo</string>
-    <string name="weather_icons_standard">En color</string>
-    <string name="weather_icon_set_title">Set de iconos</string>
-    <string name="weather_select_location">Selecciona ubicación</string>
-    <string name="weather_show_when_minimized_summary">Mostrar información meteorológica resumida al minimizar el widget</string>
+    <string name="weather_icons_standard">Coloreado</string>
+    <string name="weather_icon_set_title">Set de íconos</string>
+    <string name="weather_select_location">Seleccionar ubicación</string>
+    <string name="weather_show_when_minimized_summary">Mostrar resumen meteorológico si el widget está minimizado</string>
     <string name="weather_show_when_minimized_title">Mostrar cuando esté minimizado</string>
-    <string name="weather_alternate_icons_summary">Selecciona esta opción para cambiar entre los iconos predeterminados (Color) y los alternativos (Blanco)</string>
+    <string name="weather_alternate_icons_summary">Selecciona para cambiar entre los iconos predeterminados (Color) y los alternativos (Blanco)</string>
     <string name="app_name_maps">Mapas</string>
     <string name="ignore">Ignorar</string>
     <string name="grant">Permitir</string>
