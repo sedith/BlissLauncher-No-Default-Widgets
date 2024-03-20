@@ -1,2 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="untitled">無題</string>
+    <string name="app_suggestion">提案</string>
+    <string name="unknown">不明</string>
+    <string name="cancel">キャンセル</string>
+    <string name="default_key">DEFAULT_OWM_KEY</string>
+    <string name="weather_16">雪</string>
+    <string name="weather_41">大雪</string>
+    <string name="weather_tap_to_refresh">タップして更新</string>
+    <string name="weather_refreshing">更新しています</string>
+    <string name="weather_refresh_15min">15分</string>
+    <string name="weather_refresh_30min">30分</string>
+    <string name="weather_refresh_60min">60分</string>
+    <string name="weather_refresh_manual">手動</string>
+    <string name="weather_refresh_2hrs">2時間</string>
+    <string name="weather_refresh_4hrs">4時間</string>
+    <string name="weather_refresh_6hrs">6時間</string>
+    <string name="weather_refresh_8hrs">8時間</string>
+    <string name="general_category">全般</string>
+    <string name="weather_icon_set_title">アイコンのセット</string>
+    <string name="weather_retrieve_location_dialog_title">位置情報を取得できません！</string>
+    <string name="weather_custom_location_title">位置情報</string>
+    <string name="weather_retrieve_location_dialog_enable_button">有効にする</string>
+    <string name="search">検索</string>
+    <string name="place_automatically">自動で追加</string>
+    <string name="action_add_to_workspace">ホーム画面に追加</string>
+    <string name="tap_to_setup_usageaccess">タップしてアプリの候補を設定</string>
+    <string name="activity_not_found">アプリがインストールされていません</string>
+    <string name="add_widget">ウィジェットを追加</string>
+    <string name="edit">編集</string>
+    <string name="widgets">ウィジェット</string>
+    <string name="uninstall_shortcut_dialog">このショートカットをアンインストールしますか？</string>
+    <string name="ok">OK</string>
+    <string name="widget_is_not_resizable">ウィジェットの大きさは変更できません</string>
+    <string name="toast_package_unavailable">パッケージが利用できないか無効に設定されています</string>
+    <string name="toast_cannot_uninstall">このアプリをアンインストールできません</string>
+    <string name="icon_badging_service_title">通知のドットを表示</string>
+    <string name="choose_widget">ウィジェットを選択してください</string>
+    <string name="app_name_maps">地図</string>
+    <string name="grant">付与</string>
+    <string name="ignore">無視</string>
+    <string name="weather_0">竜巻</string>
+</resources>
