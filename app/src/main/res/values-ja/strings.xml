@@ -41,4 +41,6 @@
     <string name="grant">付与</string>
     <string name="ignore">無視</string>
     <string name="weather_0">竜巻</string>
+    <string name="display_category">表示設定</string>
+    <string name="weather_refresh_interval">更新間隔</string>
 </resources>
