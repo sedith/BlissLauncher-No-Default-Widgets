@@ -140,7 +140,7 @@
     <string name="toast_no_room">No hay más espacio en la página</string>
     <string name="toast_cannot_uninstall">No se puede remover aplicación</string>
     <string name="toast_package_unavailable">Paquete no disponible o desactivado</string>
-    <string name="toast_recreating_launcher">Recrear Launcher</string>
+    <string name="toast_recreating_launcher">Recreando launcher</string>
     <string name="toast_shortcut_added">Acceso directo añadido</string>
     <string name="toast_failed">Fallo al configurar fondo de pantalla difuminado</string>
     <string name="toast_custom_location">Configurar ubicación personalizada en ajustes meteorológicos.</string>
