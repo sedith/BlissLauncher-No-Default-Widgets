@@ -11,7 +11,7 @@
     <string name="app_suggestion">Tavsiyeler</string>
     <string name="explanation_access_to_appusage_is_not_enabled">Uygulama önerilerini görüntülemek için uygulama kullanım erişimini etkinleştirin.</string>
     <string name="unknown">Bilinmeyen</string>
-    <string name="cancel">İptal</string>
+    <string name="cancel">İptal Et</string>
     <string name="default_key">DEFAULT_OWM_KEY</string>
     <string name="weather_0">Kasırga</string>
     <string name="weather_1">Tropik Fırtına</string>
