@@ -4,4 +4,6 @@
 
 This fork removes the Search & Suggested Apps widgets.
 
+Note: the upstream is discontinued and moved to [BlissLauncher3](https://gitlab.e.foundation/e/os/BlissLauncher3).
+
 All credits go to [ram-on](https://github.com/ram-on), I merely merged their (archived) fork into the latest master from the GitLab.
